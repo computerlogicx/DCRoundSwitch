@@ -10,10 +10,11 @@
 
 @implementation TestSwitchKnobLayer
 
-- (void)drawInContext:(CGContextRef)context {
-	CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
+- (void)drawInContext:(CGContextRef)context
+{
+    CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
     CGContextFillEllipseInRect(context, CGRectInset(self.bounds, 2, 2));
-	CGContextSetShadowWithColor(context, CGSizeMake(0, 0), 0, NULL);
+    CGContextSetShadowWithColor(context, CGSizeMake(0, 0), 0, NULL);
 }
 
 @end

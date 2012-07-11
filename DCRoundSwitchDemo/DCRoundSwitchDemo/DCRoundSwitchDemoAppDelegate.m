@@ -18,17 +18,17 @@
 
 - (void)dealloc
 {
-	[window release];
-	[viewController release];
-	
+    [window release];
+    [viewController release];
+
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	self.window.rootViewController = self.viewController;
-	[self.window makeKeyAndVisible];
-	return YES;
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 @end

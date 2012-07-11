@@ -11,7 +11,8 @@
 
 @implementation TestSwitch
 
-+ (Class)knobLayerClass {
++ (Class)knobLayerClass
+{
     return [TestSwitchKnobLayer class];
 }
 
